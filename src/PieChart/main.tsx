@@ -309,6 +309,7 @@ export const PieChartMain = (props: propTypes) => {
                   } else if (props.onPress) {
                     props.onPress(item, index);
                   }
+                  console.log(0, props, index)
                   if (props.focusOnPress) {
                     if (props.selectedIndex === index) {
                       if (toggleFocusOnPress) {
@@ -395,6 +396,7 @@ export const PieChartMain = (props: propTypes) => {
                         : props.onPress
                         ? props.onPress(item, index)
                         : null;
+                      console.log(1, props, index)
                       if (props.focusOnPress) {
                         if (props.selectedIndex === index) {
                           if (toggleFocusOnPress) {
@@ -429,6 +431,7 @@ export const PieChartMain = (props: propTypes) => {
                       : props.onPress
                       ? props.onPress(item, index)
                       : null;
+                      console.log(2, props, index)
                     if (props.focusOnPress) {
                       if (props.selectedIndex === index) {
                         if (toggleFocusOnPress) {
