@@ -120,6 +120,7 @@ export const PieChart = (props: propTypes) => {
                 strokeWidth: props.data[selectedIndex].strokeWidth || null,
                 gradientCenterColor:
                   props.data[selectedIndex].gradientCenterColor || null,
+                onPress: () => {}
               },
               {
                 value: total - props.data[selectedIndex].value,
