@@ -132,6 +132,7 @@ export const PieChart = (props: propTypes) => {
             showText={false}
             selectedIndex={selectedIndex}
             innerRadius={props.innerRadius || radius / 2.5}
+            focusedState
           />
         </View>
       )}

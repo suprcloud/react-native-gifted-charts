@@ -53,6 +53,8 @@ type propTypes = {
   selectedIndex?: number;
   setSelectedIndex?: Function;
   onLabelPress?: Function;
+
+  focusedState: Boolean;
 };
 type itemType = {
   value: number;
@@ -316,7 +318,9 @@ export const PieChartMain = (props: propTypes) => {
                         props.setSelectedIndex(-1);
                       }
                     } else {
-                      props.setSelectedIndex(index);
+                      if (!props.focusedState) {
+                        props.setSelectedIndex(index);
+                      }
                     }
                   }
                 }}
