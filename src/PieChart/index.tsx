@@ -130,7 +130,7 @@ export const PieChart = (props: propTypes) => {
             radius={radius + extraRadiusForFocused}
             initialAngle={startAngle}
             showText={false}
-            setSelectedIndex={setSelectedIndex}
+            selectedIndex={selectedIndex}
             innerRadius={props.innerRadius || radius / 2.5}
           />
         </View>
